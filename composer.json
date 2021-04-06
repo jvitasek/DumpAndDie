@@ -1,5 +1,5 @@
 {
-  "name": "jvitasek/tracy-dd",
+  "name": "jvitasek/dumpanddie",
   "description": "Dump and die (dd) as known in Laravel for Tracy (Nette Framework debugger).",
   "type": "library",
   "keywords": [
@@ -10,7 +10,7 @@
   "license": [
     "MIT"
   ],
-  "homepage": "https://github.com/jvitasek/tracy-dd",
+  "homepage": "https://github.com/jvitasek/DumpAndDie",
   "authors": [
     {
       "name": "Jakub Vitasek"
