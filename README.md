@@ -4,7 +4,7 @@ Dump and die as known in Laravel for Tracy (Nette Framework debugger).
 ## Installation
 The best way to install jvitasek/tracy-dd is using [Composer](http://getcomposer.org/):
 ```sh
-$ composer require jvitasek/tracy-dump-and-die
+$ composer require jvitasek/dumpanddie
 ```
 
 ## Usage
