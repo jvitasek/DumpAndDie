@@ -20,8 +20,11 @@
     "tracy/tracy": "^2.8"
   },
   "autoload": {
-    "psr-4": {
-      "JVitasek\\DumpAndDie\\": "src"
-    }
+    "files": ["src/dumper.php"]
+  },
+  "require-dev": {
+    "phpstan/phpstan-nette": "^0.12.16",
+    "phpstan/extension-installer": "^1.1",
+    "slevomat/coding-standard": "^6.4"
   }
 }

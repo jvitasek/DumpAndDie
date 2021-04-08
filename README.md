@@ -13,7 +13,6 @@ $ composer require jvitasek/dumpanddie
 <?php declare(strict_types = 1);
 
 use Nette\Application\UI\Presenter;
-use JVitasek\DumpAndDie\Dumper;
 
 final class TestPresenter extends Presenter {
 
@@ -23,7 +22,7 @@ final class TestPresenter extends Presenter {
         $filename = sha1($price + time()) . '.log';
         
         // write this
-        Dumper::dd($price, $filename);
+        dd($price, $filename);
         
         // instead of this
         \Tracy\Debugger::barDump($price);
