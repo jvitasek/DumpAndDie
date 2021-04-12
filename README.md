@@ -7,7 +7,7 @@ The best way to install jvitasek/DumpAndDie is using [Composer](http://getcompos
 $ composer require jvitasek/dumpanddie
 ```
 
-## Usage
+## Usage in browser
 
 ```php
 <?php declare(strict_types = 1);
@@ -19,7 +19,7 @@ final class TestPresenter extends Presenter {
     public function actionDefault(): void
     {
         $price = 42;
-        $filename = sha1($price + time()) . '.log';
+        $filename = sha1((string) ($price + time())) . '.log';
         
         // write this
         dd($price, $filename);
@@ -31,4 +31,18 @@ final class TestPresenter extends Presenter {
     }
 
 }
+```
+
+## Usage in CLI
+
+```php
+<?php declare(strict_types = 1);
+
+use Tracy\Debugger;
+
+require __DIR__ . '/../vendor/autoload.php';
+Debugger::enable(Debugger::DEVELOPMENT);
+$price = 42;
+$filename = sha1((string) ($price + time())) . '.log';
+dd($price, $filename);
 ```

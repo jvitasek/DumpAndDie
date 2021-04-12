@@ -17,7 +17,7 @@
     }
   ],
   "require": {
-    "tracy/tracy": "^2.8"
+    "tracy/tracy": ">=2.5"
   },
   "autoload": {
     "files": ["src/dumper.php"]
