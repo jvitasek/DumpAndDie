@@ -1,4 +1,8 @@
 # DumpAndDie: Laravel dd() function in Tracy
+
+[![Total Downloads](https://poser.pugx.org/jvitasek/dumpanddie/downloads)](//packagist.org/packages/jvitasek/dumpanddie)
+[![Version](https://poser.pugx.org/jvitasek/dumpanddie/version)](//packagist.org/packages/jvitasek/dumpanddie)
+
 dd() is a function in Laravel used to dump one or more variables and die. This is the implementation supporting this functionality in the Tracy Panel (from Nette Framework debugger).
 
 ## Installation
